@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+} 
+
+body {
+
+    background-color: #979797 ;
+
+}
+
+header {
+
+    height: 120px;
+    background-color: #4C4C4C;
+
+}
+
+img {
+
+    width: 260px;
+    height: 60px;
+    margin: 30px;
+}
+
+nav {
+   
+    background-color: #fff;
+    height: 94px;
+
+}
+
+.nav-item {
+
+    
+    background-color: #979797;
+    display: inline-block;
+    width: 198px;
+    height: 48px;
+}
+
+.dot {
+    position: relative;
+    float: right;
+    height: 42px;
+    width: 40px;
+    margin: 40px 20px 40px -10px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+  }
