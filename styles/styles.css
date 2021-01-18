@@ -7,56 +7,62 @@
 body {
 
     background-color: #fff ;
-    width: 1000px;
+    width: 100%;
+    height: 100%;
     
 
 }
 
+/* Header section */
+
 header {
 
-    height: 120px;
     background-color: #4C4C4C;
+    height: 120px;
+    width: 100%;
+    margin-top: 20px;
     display: flex;
     justify-content: space-between;
-    width: 1000px;
-    margin-top: 20px;
 }
 
 img {
 
+    background-color: green;
     width: 200px;
     height: 60px;
     margin: 30px;
-    background-color: green;
 }
+
 
 .dots {
     display: flex;
     align-items: center;
     }
 
+
 .dot {
-    position: relative;
+    background-color: #fff;
     height: 42px;
     width: 40px;
     margin: 40px 20px 40px -9px;
-    background-color: #fff;
     border-radius: 50%;
+    position: relative;
     display: block;
   }
 
 
+/* Navigation bar */
 
-nav ul {
+.navigation-bar .list {
 
+    
     background-color: #fff;
+    height: 9.4%;
+    width: 100%;
     display: grid;
     grid-template-columns:  repeat(5, 1fr);
     grid-template-rows: 1fr;
-    grid-gap: 2px;
-    height: 94px;
-    width: 1000px;
-   
+    grid-gap: 0.2%;
 
 }
 
@@ -66,21 +72,19 @@ nav ul {
 
     background-color: #979797;
     display: inline-block;
-    width: 198px;
+    width: 17,61%;
     height: 48px;
-    margin-top: 21px;
-    margin-bottom: 25px;
-    margin-left: 1px;
-    margin-right: -1px;
+    margin: 21px -0.1% 25px 1px;
 }
+
+/* Article section */
 
 #articles, .first-article {
     background-color: #fff;
     display: grid;
     grid-template-columns:  repeat(3, 1fr);
     grid-template-rows: 1fr;
-    grid-gap: 9px;
-    width: 1000px;
+    grid-gap: 0.9%;
     
 
 }
@@ -97,20 +101,44 @@ nav ul {
 
 #blog, .second-article {
     background-color:  #979797;
-    width: 1000px;
+    width: 100%;
 }
 
 .main-blog {
     background-color: #4C4C4C;
-    width: 600px;
+    width: 60%;
     height: 453px;
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
+/* Footer Section */
+
 footer {
+
     background-color:  #4C4C4C;
+    height: 70px;
+    width: 100%;
     margin-top: 25px;
     margin-bottom: 20px;
-    height: 70px;
+    
+}
+
+/* Media query */
+
+@media screen and (max-width: 600px) {
+
+    
+    
+    .list  {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .first-article{
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+
 }
