@@ -15,7 +15,7 @@ body {
 
 /* Header section */
 
-header {
+#main-header {
 
     background-color: #4C4C4C;
     height: 120px;
@@ -79,8 +79,9 @@ img {
 
 /* Article section */
 
-#articles, .first-article {
+#articles {
     background-color: #fff;
+    width: 100%;
     display: grid;
     grid-template-columns:  repeat(3, 1fr);
     grid-template-rows: 1fr;
@@ -91,12 +92,17 @@ img {
 
 .main-article {
     background-color: #979797;
-    width: 329px;
+    width: 100%;
     height: 192px;
     display: inline-block;
     margin-bottom: 25px;
     
 
+}
+
+.container {
+    width: 100%;
+    
 }
 
 #blog, .second-article {
@@ -114,7 +120,7 @@ img {
 
 /* Footer Section */
 
-footer {
+#main-footer {
 
     background-color:  #4C4C4C;
     height: 70px;
@@ -124,21 +130,5 @@ footer {
     
 }
 
-/* Media query */
 
-@media screen and (max-width: 600px) {
 
-    
-    
-    .list  {
-        grid-template-columns: repeat(1, 1fr);
-    }
-    
-    .first-article{
-        display: flex;
-        flex-direction: column;
-    }
-
-    
-
-}
